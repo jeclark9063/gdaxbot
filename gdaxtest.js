@@ -8,7 +8,7 @@ var authedClient = new Gdax.AuthenticatedClient(key, b64secret, passphrase);
 
 console.log("\n==========================================\n");
 
-// get the last trade on GDAX ( BTC/USD )
+// get the last trade on GDAX ( ETH/USD )
 var callbackTradePub = function(err, response, data) {
     // parse and print data
     if (data) {
@@ -45,7 +45,7 @@ function callback24Hr (err, response, data) {
     console.log("\n==========================================\n");
 };
 
-// Print your balance for each currency
+// Print your balance for ethereum currency
 var callbackAccounts = function(err, response, data) {
     // parse and print data
     if (data) {
